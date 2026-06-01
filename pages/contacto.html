@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -6,81 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - FastMenu ESPE</title>
     <link rel="icon" type="image/x-icon" href="../imagenes/logo/iconos/atencion-al-cliente.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
 </head>
 
-<body style="font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; color: #333; display: flex; flex-direction: column; min-height: 100vh;">
+<body>
     
-    <header style="background-color: darkred; color: white; text-align: center; padding: 20px 0;">
-        <h1 style="margin: 0;">Contáctanos</h1>
-        <img src="../imagenes/logo/iconos/atencion-al-cliente.ico" alt="Icono Atención" width="60" style="margin-top: 10px;">
+    <header>
+        <h1>Contáctanos</h1>
+        <img src="../imagenes/logo/iconos/atencion-al-cliente.ico" alt="Icono Atención" width="60">
     </header>
     
-    <nav style="background-color: #333; padding: 15px; text-align: center;">
-        <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="display: inline; margin: 0 10px;">
-                <a href="principal.html" style="color: white; text-decoration: none; font-weight: bold;">Inicio</a>
+    <nav>
+        <ul>
+            <li>
+                <a href="principal.html"><i class="fas fa-home"></i> Inicio</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="pedido.html" style="color: white; text-decoration: none; font-weight: bold;">Mi Pedido</a>
+            <li>
+                <a href="pedido.html"><i class="fas fa-shopping-cart"></i> Mi pedido</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="nosotros.html" style="color: white; text-decoration: none; font-weight: bold;">Nosotros</a>
+            <li>
+                <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="contacto.html" style="color: #ffcc00; text-decoration: none; font-weight: bold;">Contacto</a>
+            <li>
+                <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="../index.html" style="color: #ff4d4d; text-decoration: none; font-weight: bold;">Cerrar Sesión</a>
+            <li>
+                <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
             </li>
         </ul>
     </nav>
 
-    <main style="flex: 1; max-width: 600px; margin: 20px auto; padding: 0 20px; width: 100%;">
+    <main>
         
-        <section id="buzon-sugerencias" style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: darkred; margin-top: 0; text-align: center;">Buzón de Sugerencias</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 30px;">¿Tienes algún problema con un pedido o nos quieres sugerir un nuevo platillo? ¡Escríbenos!</p>
+        <section id="buzon-sugerencias">
+            <h2>Buzón de Sugerencias</h2>
+            <p>¿Tienes algún problema con un pedido o nos quieres sugerir un nuevo platillo? ¡Escríbenos!</p>
             
             <form action="principal.html" method="get">
-                <p style="margin-bottom: 15px;">
-                    <label for="asunto" style="font-weight: bold; display: block; margin-bottom: 5px;">Asunto:</label>
-                    <input type="text" id="asunto" name="asunto" required placeholder="Ej: Sugerencia de menú" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                <p>
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required placeholder="Ej: Sugerencia de menú">
                 </p>
                 
-                <p style="margin-bottom: 15px;">
-                    <label for="telefono" style="font-weight: bold; display: block; margin-bottom: 5px;">Teléfono (Opcional):</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="0999999999" pattern="[0-9]{10}" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                <p>
+                    <label for="telefono">Teléfono (Opcional):</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="0999999999" pattern="[0-9]{10}">
                 </p>
 
-                <p style="margin-bottom: 15px;">
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">Tipo de mensaje:</label>
-                    <span style="display: inline-block; margin-right: 15px;">
+                <p>
+                    <label>Tipo de mensaje:</label>
+                    <span>
                         <input type="radio" id="tipo_reclamo" name="tipo_mensaje" value="reclamo" required>
                         <label for="tipo_reclamo">Reclamo</label>
                     </span>
-                    <span style="display: inline-block; margin-right: 15px;">
+                    <span>
                         <input type="radio" id="tipo_sugerencia" name="tipo_mensaje" value="sugerencia">
                         <label for="tipo_sugerencia">Sugerencia</label>
                     </span>
-                    <span style="display: inline-block; margin-right: 15px;">
+                    <span>
                         <input type="radio" id="tipo_otros" name="tipo_mensaje" value="otros">
                         <label for="tipo_otros">Otros</label>
                     </span>
                 </p>
 
-                <p style="margin-bottom: 25px;">
-                    <label for="mensaje" style="font-weight: bold; display: block; margin-bottom: 5px;">Tu mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe aquí los detalles..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: vertical;"></textarea>
+                <p>
+                    <label for="mensaje">Tu mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe aquí los detalles..."></textarea>
                 </p>
 
-                <button type="submit" style="background-color: darkred; color: white; border: none; padding: 12px; border-radius: 4px; cursor: pointer; width: 100%; font-size: 1.1em; font-weight: bold;">Enviar Mensaje</button>
+                <button type="submit">Enviar Mensaje</button>
             </form>
         </section>
 
     </main>
 
-    <footer style="background-color: #333; color: white; text-align: center; padding: 15px 0;">
-        <p style="margin: 0;">Copyright &copy; 2026 FastMenu ESPE. Todos los derechos reservados.</p>
+    <footer>
+        <p>Copyright &copy; 2026 FastMenu ESPE. Todos los derechos reservados.</p>
     </footer>
 
 </body>

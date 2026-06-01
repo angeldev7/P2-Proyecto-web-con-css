@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -6,39 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - FastMenu ESPE</title>
     <link rel="icon" type="image/x-icon" href="../imagenes/logo/iconos/Icono-FastMenu.ico">
+    <link rel="stylesheet" href="../css/general.css">
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; color: #333; display: flex; flex-direction: column; min-height: 100vh;">
+<body>
 
-    <header style="background-color: darkred; color: white; text-align: center; padding: 20px 0;">
-        <h1 style="margin: 0;">Formulario de Registro</h1>
+    <header>
+        <h1>Formulario de Registro</h1>
     </header>
 
-    <main style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px;">
-        <section id="formulario-registro" style="background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 100%; max-width: 500px; text-align: left;">
-            <p style="text-align: center; color: #666; margin-bottom: 20px;">Completa tus datos para disfrutar de nuestros beneficios.</p>
+    <main>
+        <section id="formulario-registro">
+            <p>Completa tus datos para disfrutar de nuestros beneficios.</p>
             <form action="principal.html" method="get">
                 
-                <fieldset style="border: 1px solid #ddd; border-radius: 5px; margin-bottom: 20px; padding: 15px;">
-                    <legend style="color: darkred; font-weight: bold; padding: 0 5px;">Datos Personales</legend>
-                    <p style="margin-bottom: 15px;">
-                        <label for="nombres" style="font-weight: bold; display: block; margin-bottom: 5px;">Nombres:</label>
-                        <input type="text" id="nombres" name="nombres" required placeholder="Ej: Juan Carlos" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <p>
+                        <label for="nombres">Nombres:</label>
+                        <input type="text" id="nombres" name="nombres" required placeholder="Ej: Juan Carlos">
                     </p>
-                    <p style="margin-bottom: 15px;">
-                        <label for="apellidos" style="font-weight: bold; display: block; margin-bottom: 5px;">Apellidos:</label>
-                        <input type="text" id="apellidos" name="apellidos" required placeholder="Ej: Pérez Gómez" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                    <p>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required placeholder="Ej: Pérez Gómez">
                     </p>
-                    <p style="margin-bottom: 15px;">
-                        <label for="cedula" style="font-weight: bold; display: block; margin-bottom: 5px;">Cédula:</label>
-                        <input type="text" id="cedula" name="cedula" maxlength="10" required placeholder="1700000000" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                    <p>
+                        <label for="cedula">Cédula:</label>
+                        <input type="text" id="cedula" name="cedula" maxlength="10" required placeholder="1700000000">
                     </p>
-                    <p style="margin-bottom: 15px;">
-                        <label for="fecha_nacimiento" style="font-weight: bold; display: block; margin-bottom: 5px;">Fecha de Nacimiento:</label>
-                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                    <p>
+                        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
                     </p>
-                    <p style="margin-bottom: 0;">
-                        <label for="genero" style="font-weight: bold; display: block; margin-bottom: 5px;">Género:</label>
-                        <select id="genero" name="genero" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                    <p>
+                        <label for="genero">Género:</label>
+                        <select id="genero" name="genero" required>
                             <option value="">-- Selecciona --</option>
                             <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
@@ -47,34 +48,34 @@
                     </p>
                 </fieldset>
 
-                <fieldset style="border: 1px solid #ddd; border-radius: 5px; margin-bottom: 20px; padding: 15px;">
-                    <legend style="color: darkred; font-weight: bold; padding: 0 5px;">Datos de Cuenta</legend>
-                    <p style="margin-bottom: 15px;">
-                        <label for="email" style="font-weight: bold; display: block; margin-bottom: 5px;">Correo Electrónico Institucional:</label>
-                        <input type="email" id="email" name="email" required placeholder="usuario@espe.edu.ec" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                <fieldset>
+                    <legend>Datos de Cuenta</legend>
+                    <p>
+                        <label for="email">Correo Electrónico Institucional:</label>
+                        <input type="email" id="email" name="email" required placeholder="usuario@espe.edu.ec">
                     </p>
-                    <p style="margin-bottom: 15px;">
-                        <label for="password" style="font-weight: bold; display: block; margin-bottom: 5px;">Contraseña:</label>
-                        <input type="password" id="password" name="password" minlength="8" maxlength="16" required placeholder="Mínimo 8 caracteres" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+                    <p>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" minlength="8" maxlength="16" required placeholder="Mínimo 8 caracteres">
                     </p>
-                    <p style="margin-bottom: 0;">
-                        <label style="cursor: pointer; color: #555;">
-                            <input type="checkbox" required name="terminos"> Acepto los <a href="#" style="color: darkred;">términos y condiciones</a>
+                    <p>
+                        <label>
+                            <input type="checkbox" required name="terminos"> Acepto los <a href="#">términos y condiciones</a>
                         </label>
                     </p>
                 </fieldset>
 
-                <button type="submit" style="background-color: darkred; color: white; border: none; padding: 12px; border-radius: 4px; cursor: pointer; width: 100%; font-size: 1.1em; font-weight: bold;">Completar Registro</button>
+                <button type="submit">Completar Registro</button>
             </form>
         </section>
         
-        <section id="login-link" style="margin-top: 20px; text-align: center;">
-            <p>¿Ya tienes una cuenta? <a href="../index.html" style="color: darkred; font-weight: bold; text-decoration: none;">Inicia Sesión aquí</a></p>
+        <section id="login-link">
+            <p>¿Ya tienes una cuenta? <a href="../index.html">Inicia Sesión aquí</a></p>
         </section>
     </main>
 
-    <footer style="background-color: #333; color: white; text-align: center; padding: 15px 0; width: 100%;">
-        <p style="margin: 0;">Copyright © 2026 FastMenu ESPE. Todos los derechos reservados.</p>
+    <footer>
+        <p>Copyright © 2026 FastMenu ESPE. Todos los derechos reservados.</p>
     </footer>
 
 </body>

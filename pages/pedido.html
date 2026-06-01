@@ -6,89 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pedido - FastMenu ESPE</title>
     <link rel="icon" type="image/x-icon" href="../imagenes/logo/iconos/carrito-de-compras1.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
 </head>
 
-<body style="font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; color: #333; display: flex; flex-direction: column; min-height: 100vh;">
+<body>
     
-    <header style="background-color: darkred; color: white; text-align: center; padding: 20px 0;">
-        <h1 style="margin: 0;">Tu Carrito y Pedido</h1>
-        <img src="../imagenes/logo/iconos/carrito-de-compras1.ico" alt="Icono Carrito" width="60" style="margin-top: 10px;">
+    <header>
+        <h1>Tu Carrito y Pedido</h1>
+        <img src="../imagenes/logo/iconos/carrito-de-compras1.ico" alt="Icono Carrito" width="60">
     </header>
     
-    <nav style="background-color: #333; padding: 15px; text-align: center;">
-        <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="display: inline; margin: 0 10px;">
-                <a href="principal.html" style="color: white; text-decoration: none; font-weight: bold;">Inicio</a>
+    <nav>
+        <ul>
+            <li>
+                <a href="principal.html"><i class="fas fa-home"></i> Inicio</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="pedido.html" style="color: #ffcc00; text-decoration: none; font-weight: bold;">Mi Pedido</a>
+            <li>
+                <a href="pedido.html"><i class="fas fa-shopping-cart"></i> Mi pedido</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="nosotros.html" style="color: white; text-decoration: none; font-weight: bold;">Nosotros</a>
+            <li>
+                <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="contacto.html" style="color: white; text-decoration: none; font-weight: bold;">Contacto</a>
+            <li>
+                <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="../index.html" style="color: #ff4d4d; text-decoration: none; font-weight: bold;">Cerrar Sesión</a>
+            <li>
+                <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
             </li>
         </ul>
     </nav>
 
-    <main style="flex: 1; max-width: 800px; margin: 20px auto; padding: 0 20px; width: 100%;">
+    <main>
         
-        <section id="resumen-compra" style="background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px;">
-            <h2 style="color: darkred; border-bottom: 2px solid darkred; padding-bottom: 10px; margin-top: 0;">Resumen de tu compra</h2>
+        <section id="resumen-compra">
+            <h2>Resumen de tu compra</h2>
             
-            <table style="width: 100%; border-collapse: collapse; text-align: left; margin-bottom: 20px;">
-                <tr style="border-bottom: 1px solid #ddd;">
-                    <th style="padding: 10px 0;">Producto</th>
-                    <th style="padding: 10px 0; text-align: center;">Cantidad</th>
-                    <th style="padding: 10px 0; text-align: right;">Precio</th>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 10px 0;">Promoción del Día (Almuerzo + Bebida)</td>
-                    <td style="padding: 10px 0; text-align: center;">1</td>
-                    <td style="padding: 10px 0; text-align: right;">$2.75</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 10px 0;">Galletas Oreo</td>
-                    <td style="padding: 10px 0; text-align: center;">1</td>
-                    <td style="padding: 10px 0; text-align: right;">$0.40</td>
+            <table>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
                 </tr>
                 <tr>
-                    <td colspan="2" style="padding: 15px 0; text-align: right; font-weight: bold; font-size: 1.2em;">Total a Pagar:</td>
-                    <td style="padding: 15px 0; text-align: right; font-weight: bold; font-size: 1.2em; color: darkred;">$3.15</td>
+                    <td>Promoción del Día (Almuerzo + Bebida)</td>
+                    <td>1</td>
+                    <td>$2.75</td>
+                </tr>
+                <tr>
+                    <td>Galletas Oreo</td>
+                    <td>1</td>
+                    <td>$0.40</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Total a Pagar:</td>
+                    <td>$3.15</td>
                 </tr>
             </table>
 
-            <div style="text-align: right;">
-                <a href="principal.html" style="display: inline-block; background-color: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">Confirmar Pago en Efectivo</a>
+            <div>
+                <a href="principal.html">Confirmar Pago en Efectivo</a>
             </div>
         </section>
 
-        <section id="estado-pedido" style="background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; text-align: center;">
-            <h2 style="color: darkred; margin-top: 0;">Estado de tu pedido actual</h2>
-            <p style="font-weight: bold; color: #555;">Preparando envío... (Tiempo estimado: 15-20 minutos )</p>
+        <section id="estado-pedido">
+            <h2>Estado de tu pedido actual</h2>
+            <p>Preparando envío... (Tiempo estimado: 15-20 minutos )</p>
             
-            <progress value="65" max="100" style="width: 100%; height: 25px; accent-color: darkred;"></progress>
-            <p style="font-size: 0.9em; color: #888; margin-bottom: 0;">65% completado</p>
+            <progress value="65" max="100"></progress>
+            <p>65% completado</p>
         </section>
 
-        <section id="punto-retiro" style="background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px;">
-            <h2 style="color: darkred; border-bottom: 2px solid darkred; padding-bottom: 10px; margin-top: 0;">Punto de Retiro</h2>
-            <p style="color: #555;">Acércate al punto marcado en la ESPE sede Santo Domingo (Luz de América) para retirar tu pedido cuando la barra llegue al 100%.</p>
+        <section id="punto-retiro">
+            <h2>Punto de Retiro</h2>
+            <p>Acércate al punto marcado en la ESPE sede Santo Domingo (Luz de América) para retirar tu pedido cuando la barra llegue al 100%.</p>
             
-            <div style="text-align: center; margin: 15px 0;">
-                <a href="https://maps.app.goo.gl/63eABtZZDTPDACeK9" target="_blank" style="background-color: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block;">Abrir ubicación exacta en Google Maps</a>
+            <div>
+                <a href="https://maps.app.goo.gl/63eABtZZDTPDACeK9" target="_blank">Abrir ubicación exacta en Google Maps</a>
             </div>
 
         </section>
 
     </main>
 
-    <footer style="background-color: #333; color: white; text-align: center; padding: 15px 0;">
-        <p style="margin: 0;">Copyright &copy; 2026 FastMenu ESPE. Todos los derechos reservados.</p>
+    <footer>
+        <p>Copyright &copy; 2026 FastMenu ESPE. Todos los derechos reservados.</p>
     </footer>
 
 </body>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -6,168 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal - FastMenu ESPE</title>
     <link rel="icon" type="image/x-icon" href="../imagenes/logo/iconos/Icono-FastMenu.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/general.css">
 </head>
 
-<body style="font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; color: #333;">
+<body>
     
-    <header style="background-color: darkred; color: white; text-align: center; padding: 20px 0;">
-        <h1 style="margin: 0;">Bienvenido a FastMenu ESPE</h1>
-        <img src="../imagenes/logo/fastfood-logo.jpg" alt="Logo de FastMenu ESPE" width="100" style="border-radius: 10px; margin-top: 15px; border: 2px solid white;">
+    <header>
+        <h1>Bienvenido a FastMenu ESPE</h1>
+        <img src="../imagenes/logo/fastfood-logo.jpg" alt="Logo de FastMenu ESPE" width="100">
     </header>
     
-    <nav style="background-color: #333; padding: 15px; text-align: center;">
-        <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="display: inline; margin: 0 10px;">
-                <a href="principal.html" style="color: #ffcc00; text-decoration: none; font-weight: bold;">Inicio</a>
+    <nav>
+        <ul>
+            <li>
+                <a href="principal.html"><i class="fas fa-home"></i> Inicio</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="#menu" style="color: white; text-decoration: none; font-weight: bold;">Menú</a>
+            <li>
+                <a href="#menu"><i class="fas fa-utensils"></i> Menú</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="#horarios" style="color: white; text-decoration: none; font-weight: bold;">Horarios</a>
+            <li>
+                <a href="#horarios"><i class="fas fa-clock"></i> Horarios</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="pedido.html" style="color: white; text-decoration: none; font-weight: bold;">Mi pedido</a>
+            <li>
+                <a href="pedido.html"><i class="fas fa-shopping-cart"></i> Mi pedido</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="nosotros.html" style="color: white; text-decoration: none; font-weight: bold;">Nosotros</a>
+            <li>
+                <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="contacto.html" style="color: white; text-decoration: none; font-weight: bold;">Contacto</a>
+            <li>
+                <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
             </li>
-            <li style="display: inline; margin: 0 10px;">
-                <a href="../index.html" style="color: #ff4d4d; text-decoration: none; font-weight: bold;">Cerrar sesión</a>
+            <li>
+                <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
             </li>
         </ul>
     </nav>
 
-    <main style="max-width: 900px; margin: 20px auto; padding: 0 20px;">
+    <main>
         
-        <section id="bienvenida" style="text-align: center; margin-bottom: 40px; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: darkred; margin-top: 0;">¡El mejor lugar para tus antojos!</h2>
+        <section id="bienvenida">
+            <h2>¡El mejor lugar para tus antojos!</h2>
             <p>Explora nuestra variedad de opciones preparadas al instante.</p>
         </section>
 
-        <aside style="background-color: #fff3cd; border-left: 5px solid #ffcc00; padding: 15px; margin-bottom: 40px; border-radius: 4px;">
-            <h3 style="margin-top: 0; color: #856404;">Promoción del Día</h3>
-            <p style="margin-bottom: 0; color: #856404;">Lleva tu almuerzo + cualquier bebida seleccionada por solo <strong>$2.75</strong>. ¡Aprovecha antes de que se acabe!</p>
+        <aside>
+            <h3>Promoción del Día</h3>
+            <p>Lleva tu almuerzo + cualquier bebida seleccionada por solo <strong>$2.75</strong>. ¡Aprovecha antes de que se acabe!</p>
         </aside>
 
         <section id="menu">
-            <h2 style="text-align: center; border-bottom: 2px solid darkred; padding-bottom: 10px;">Nuestro Menú</h2>
-            
-            <article style="margin-bottom: 40px;">
-                <h3 style="color: darkred; font-size: 1.5em;">Almuerzos</h3>
-                <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-                    <figure style="background-color: white; border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 220px; text-align: center; margin: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                        <img src="../imagenes/menu/almuerzos/arroz-con-camaron.jpg" alt="Arroz con camarón" width="150" style="border-radius: 5px;">
-                        <figcaption>
-                            <h4 style="margin: 10px 0 5px;">Arroz con camarón</h4>
-                            <p style="font-size: 0.9em; margin: 0 0 10px;">Con porción especial de ensalada.</p>
-                            <strong style="color: green; font-size: 1.2em;">$2.25</strong><br>
-                            <button style="background-color: darkred; color: white; border: none; padding: 8px 15px; margin-top: 10px; border-radius: 4px; cursor: pointer;">Añadir al carrito</button>
-                        </figcaption>
-                    </figure>
-                </div>
-            </article>
-            
-            <article style="margin-bottom: 40px;">
-                <h3 style="color: darkred; font-size: 1.5em;">Bebidas</h3>
-                <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-                    <figure style="background-color: white; border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 220px; text-align: center; margin: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                        <img src="../imagenes/menu/bebidas/sprite.webp" alt="Sprite" width="150" style="border-radius: 5px;">
-                        <figcaption>
-                            <h4 style="margin: 10px 0 5px;">Sprite</h4>
-                            <p style="font-size: 0.9em; margin: 0 0 10px;">Botella personal 500ml.</p>
-                            <strong style="color: green; font-size: 1.2em;">$0.50</strong><br>
-                            <button style="background-color: darkred; color: white; border: none; padding: 8px 15px; margin-top: 10px; border-radius: 4px; cursor: pointer;">Añadir al carrito</button>
-                        </figcaption>
-                    </figure>
-                    <figure style="background-color: white; border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 220px; text-align: center; margin: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                        <img src="../imagenes/menu/bebidas/fanta.webp" alt="Fanta" width="150" style="border-radius: 5px;">
-                        <figcaption>
-                            <h4 style="margin: 10px 0 5px;">Fanta</h4>
-                            <p style="font-size: 0.9em; margin: 0 0 10px;">Botella personal 500ml.</p>
-                            <strong style="color: green; font-size: 1.2em;">$0.50</strong><br>
-                            <button style="background-color: darkred; color: white; border: none; padding: 8px 15px; margin-top: 10px; border-radius: 4px; cursor: pointer;">Añadir al carrito</button>
-                        </figcaption>
-                    </figure>
-                </div>
-            </article>
-            
-            <article style="margin-bottom: 40px;">
-                <h3 style="color: darkred; font-size: 1.5em;">Snacks</h3>
-                <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-                    <figure style="background-color: white; border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 220px; text-align: center; margin: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                        <img src="../imagenes/menu/snacks/galletas-chips-ahoy.jpg" alt="Chips Ahoy" width="150" style="border-radius: 5px;">
-                        <figcaption>
-                            <h4 style="margin: 10px 0 5px;">Chips Ahoy</h4>
-                            <p style="font-size: 0.9em; margin: 0 0 10px;">Con chispas de chocolate.</p>
-                            <strong style="color: green; font-size: 1.2em;">$0.40</strong><br>
-                            <button style="background-color: darkred; color: white; border: none; padding: 8px 15px; margin-top: 10px; border-radius: 4px; cursor: pointer;">Añadir al carrito</button>
-                        </figcaption>
-                    </figure>
-                    <figure style="background-color: white; border: 1px solid #ddd; padding: 15px; border-radius: 8px; width: 220px; text-align: center; margin: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                        <img src="../imagenes/menu/snacks/galletas-oreo.webp" alt="Oreo" width="150" style="border-radius: 5px;">
-                        <figcaption>
-                            <h4 style="margin: 10px 0 5px;">Galletas Oreo</h4>
-                            <p style="font-size: 0.9em; margin: 0 0 10px;">Paquete 4 unidades.</p>
-                            <strong style="color: green; font-size: 1.2em;">$0.40</strong><br>
-                            <button style="background-color: darkred; color: white; border: none; padding: 8px 15px; margin-top: 10px; border-radius: 4px; cursor: pointer;">Añadir al carrito</button>
-                        </figcaption>
-                    </figure>
-                </div>
-            </article>
-            
-        </section>
-
-        <section id="info-adicional" style="margin-top: 50px; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <h2 style="color: darkred; border-bottom: 2px solid darkred; padding-bottom: 10px; margin-top: 0;">Información Adicional</h2>
-            
-            <h3 id="horarios" style="color: #333;">Horarios de Servicio</h3>
-            <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; text-align: left;">
+            <h2>Nuestro Menú</h2>
+            <table>
                 <thead>
-                    <tr style="background-color: darkred; color: white;">
-                        <th style="padding: 10px; border: 1px solid #ddd;">Día</th>
-                        <th style="padding: 10px; border: 1px solid #ddd;">Apertura</th>
-                        <th style="padding: 10px; border: 1px solid #ddd;">Cierre</th>
+                    <tr>
+                        <th>
+                            <h3>Almuerzos</h3>
+                        </th>
+                        <th>
+                            <h3>Bebidas</h3>
+                        </th>
+                        <th>
+                            <h3>Snacks</h3>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd;">Lunes a Viernes</td>
-                        <td style="padding: 10px; border: 1px solid #ddd;">07:00 AM</td>
-                        <td style="padding: 10px; border: 1px solid #ddd;">15:30 PM</td>
-                    </tr>
-                    <tr style="background-color: #f9f9f9;">
-                        <td style="padding: 10px; border: 1px solid #ddd;">Sábados</td>
-                        <td style="padding: 10px; border: 1px solid #ddd;">08:00 AM</td>
-                        <td style="padding: 10px; border: 1px solid #ddd;">14:00 PM</td>
+                        <td>
+                            <article>
+                                <figure>
+                                    <img src="../imagenes/menu/almuerzos/arroz-con-camaron.jpg" alt="Arroz con camarón" width="150">
+                                    <figcaption>
+                                        <h4>Arroz con camarón</h4>
+                                        <p>Con porción especial de ensalada.</p>
+                                        <strong>$2.50</strong><br>
+                                        <button>Añadir al carrito</button>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                        </td>
+                        <td>
+                            <figure>
+                                <img src="../imagenes/menu/bebidas/sprite.webp" alt="Sprite" width="150">
+                                <figcaption>
+                                    <h4>Sprite</h4>
+                                    <p>Botella personal 500ml.</p>
+                                    <strong>$0.50</strong><br>
+                                    <button>Añadir al carrito</button>
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <img src="../imagenes/menu/snacks/galletas-chips-ahoy.jpg" alt="Chips Ahoy" width="150">
+                                <figcaption>
+                                    <h4>Chips Ahoy</h4>
+                                    <p>Con chispas de chocolate.</p>
+                                    <strong>$0.40</strong><br>
+                                    <button>Añadir al carrito</button>
+                                </figcaption>
+                            </figure>
+                        </td>
                     </tr>
                     <tr>
-                        <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: darkred;">Domingos</td>
-                        <td colspan="2" style="padding: 10px; border: 1px solid #ddd; text-align: center; color: darkred;">Cerrado</td>
+                        <td>
+                            <article>
+                                <figure>
+                                    <img src="../imagenes/menu/almuerzos/arroz-con-menestra-y-carne.jpg" alt="Arroz con menestra y carne" width="150">
+                                    <figcaption>
+                                        <h4>Arroz con menestra</h4>
+                                        <p>Con carne asada y ensalada.</p>
+                                        <strong>$2.50</strong><br>
+                                        <button>Añadir al carrito</button>
+                                    </figcaption>
+                                </figure>
+                            </article>
+                        </td>
+                        <td>
+                            <figure>
+                                <img src="../imagenes/menu/bebidas/fanta.webp" alt="Fanta" width="150">
+                                <figcaption>
+                                    <h4>Fanta</h4>
+                                    <p>Botella personal 500ml.</p>
+                                    <strong>$0.50</strong><br>
+                                    <button>Añadir al carrito</button>
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <figure>
+                                <img src="../imagenes/menu/snacks/galletas-oreo.webp" alt="Oreo" width="150">
+                                <figcaption>
+                                    <h4>Galletas Oreo</h4>
+                                    <p>Paquete 4 unidades.</p>
+                                    <strong>$0.40</strong><br>
+                                    <button>Añadir al carrito</button>
+                                </figcaption>
+                            </figure>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+            <hr>
+        </section>
 
-            <h3 style="color: #333;">Preguntas Frecuentes</h3>
-
+        <section id="info-adicional">
+            <h2>Información Adicional</h2>
             
-            <details style="margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; background-color: #f8f9fa;">
-                <summary style="font-weight: bold; cursor: pointer; color: darkred;">¿Cuáles son las formas de pago aceptadas?</summary>
-                <p style="margin-top: 10px; color: #555;">Por ahora aceptamos pagos en efectivo y transferencias bancarias directas (Pichincha / Produbanco).</p>
+            <h3 id="horarios">Horarios de Servicio</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Apertura</th>
+                        <th>Cierre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes a Viernes</td>
+                        <td>07:00 AM</td>
+                        <td>15:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sábados</td>
+                        <td>08:00 AM</td>
+                        <td>14:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Domingos</td>
+                        <td colspan="2"><h3>Cerrado</h3></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="preguntas_frecuentes">
+            <h3>Preguntas Frecuentes</h3>
+            
+            <details>
+                <summary>¿Cuáles son las formas de pago aceptadas?</summary>
+                <p>Por ahora aceptamos pagos en efectivo y transferencias bancarias directas (Pichincha / Produbanco).</p>
             </details>
-            <details style="margin-bottom: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; background-color: #f8f9fa;">
-                <summary style="font-weight: bold; cursor: pointer; color: darkred;">¿Dónde retirar el pedido?</summary>
-                <p style="margin-top: 10px; color: #555;">Una vez validado el menú desde la web, debes acercarte a la garita principal y esperar al respectivo repartidor con el logo de FastMenu en su transporte (moto o carro). Te recordamos que debido a la distancia (aprox. 2Km) desde nuestro punto de cocina hasta la universidad, los pedidos toman entre 15 y 20 minutos en llegar una vez confirmados.</p>
+            <details>
+                <summary>¿Dónde retirar el pedido?</summary>
+                <p>Una vez validado el menú desde la web, debes acercarte a la garita principal y esperar al respectivo repartidor con el logo de FastMenu en su transporte (moto o carro). Te recordamos que debido a la distancia (aprox. 2Km) desde nuestro punto de cocina hasta la universidad, los pedidos toman entre 15 y 20 minutos en llegar una vez confirmados.</p>
+            </details>
+            <details>
+                <summary>¿Qué pasa si no llega mi pedido a tiempo?</summary>
+                <p>Si tu pedido no llega dentro del tiempo estimado, por favor contacta con nuestro servicio al cliente para resolver la situación.</p>
             </details>
         </section>
 
     </main>
 
-    <footer style="background-color: #333; color: white; text-align: center; padding: 15px 0;">
-        <p style="margin: 0;">Copyright &copy; 2026 FastMenu ESPE. Todos los derechos reservados.</p>
+    <footer>
+        <p>Copyright &copy; 2026 FastMenu ESPE. Todos los derechos reservados.</p>
     </footer>
 </body>
 
