@@ -1,0 +1,47 @@
+/* ============================================================
+   BLOQUE 1: FORMULARIO DE REGISTRO
+   Estilos propios del formulario de creación de cuenta.
+   ============================================================ */
+#formulario-registro {
+    max-width: 600px;
+    border-top: 4px solid #8b0000;
+}
+#formulario-registro > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.formulario-registro fieldset {
+    background-color: #f8f9fa;
+    margin-bottom: 25px;
+}
+
+/* ============================================================
+   BLOQUE 2: BOTÓN DE REGISTRO
+   Estilos reutilizables mediante clases.
+   ============================================================ */
+.btn-registrar {
+    background-color: #8b0000;
+}
+.btn-registrar:hover {
+    background-color: #8b0000;
+}
+
+/* ============================================================
+   BLOQUE 3: ENLACE DE INICIO DE SESIÓN
+   Sección secundaria debajo del formulario.
+   ============================================================ */
+#login-link {
+    max-width: 600px;
+    background-color: #f8f9fa;
+    border: 1px dashed #8b0000;
+    padding: 20px;
+}
+#login-link p {
+    margin-bottom: 0;
+    text-align: center;
+}
+@media (max-width: 480px) {
+    #formulario-registro, #login-link {
+        max-width: 100%;
+    }
+}

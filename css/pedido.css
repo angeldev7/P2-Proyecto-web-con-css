@@ -1,0 +1,63 @@
+/* ============================================================
+   BLOQUE 1: RESUMEN DE COMPRA
+   Estilos propios de la tabla del carrito.
+   ============================================================ */
+#resumen-compra {
+    text-align: left;
+}
+#resumen-compra table tr:last-child {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+#resumen-compra table tr:last-child td {
+    color: #8b0000;
+    font-size: 1.1em;
+    border-top: 2px solid #8b0000;
+}
+#resumen-compra div {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* ============================================================
+   BLOQUE 2: ESTADO DEL PEDIDO
+   Estilos para la barra de progreso y mensajes de estado.
+   ============================================================ */
+#estado-pedido {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+#estado-pedido p:first-of-type {
+    font-weight: bold;
+    color: #8b0000;
+}
+#estado-pedido progress {
+    margin: 15px 0;
+}
+#estado-pedido p:last-of-type {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   BLOQUE 3: PUNTO DE RETIRO
+   Estilos para la sección de ubicación del pedido.
+   ============================================================ */
+#punto-retiro {
+    border-left: 5px solid #28a745;
+    text-align: left;
+}
+#punto-retiro h2 {
+    color: #28a745;
+    border-bottom-color: #28a745;
+}
+#punto-retiro p {
+    margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+    #resumen-compra table {
+        font-size: 0.85em;
+    }
+}

@@ -1,0 +1,88 @@
+/* ============================================================
+   BLOQUE 1: BIENVENIDA
+   Estilos propios de la sección principal de la página de inicio.
+   ============================================================ */
+#bienvenida {
+    background-color: #ffffff;
+    border-left: 5px solid #8b0000;
+    text-align: center;
+}
+#bienvenida h2 {
+    margin-bottom: 10px;
+}
+
+/* ============================================================
+   BLOQUE 2: PROMOCIÓN Y NOTAS
+   Estilos reutilizables mediante clases.
+   ============================================================ */
+aside .nota strong {
+    color: #8b0000;
+    font-size: 1.2em;
+}
+
+/* ============================================================
+   BLOQUE 3: MENÚ Y TARJETAS DE PRODUCTO
+   Estilos para la tabla del menú y las tarjetas de cada ítem.
+   ============================================================ */
+#menu {
+    padding: 25px;
+}
+#menu h2 {
+    margin-bottom: 25px;
+}
+#menu .tarjeta {
+    border: 2px solid #ddd;
+}
+#menu .tarjeta:hover {
+    border-color: #8b0000;
+}
+#menu .tarjeta img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ============================================================
+   BLOQUE 4: INFORMACIÓN ADICIONAL Y HORARIOS
+   Estilos para tablas de horario de servicio.
+   ============================================================ */
+#info-adicional {
+    text-align: left;
+}
+#info-adicional #horarios {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+#info-adicional table tbody tr:last-child td {
+    text-align: center;
+    font-style: italic;
+    color: #8b0000;
+}
+
+/* ============================================================
+   BLOQUE 5: PREGUNTAS FRECUENTES
+   Estilos para elementos desplegables (details/summary).
+   ============================================================ */
+#preguntas_frecuentes {
+    text-align: left;
+}
+#preguntas_frecuentes h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#preguntas_frecuentes details {
+    border-left: 3px solid #8b0000;
+}
+#preguntas_frecuentes details p {
+    padding: 5px 10px;
+    margin-top: 8px;
+}
+@media (max-width: 768px) {
+    #menu {
+        padding: 15px;
+    }
+    #menu .tarjeta img {
+        width: 100%;
+    }
+}

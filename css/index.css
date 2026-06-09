@@ -1,0 +1,50 @@
+/* ============================================================
+   BLOQUE 1: FORMULARIO DE INICIO DE SESIÓN
+   Estilos propios de la página de login.
+   ============================================================ */
+#login-form {
+    max-width: 450px;
+    border-top: 4px solid #8b0000;
+}
+#login-form img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+#login-form form {
+    margin-top: 20px;
+}
+#login-form form div a {
+    font-size: 0.85em;
+}
+
+/* ============================================================
+   BLOQUE 2: ENLACE DE REGISTRO
+   Sección secundaria debajo del formulario de acceso.
+   ============================================================ */
+#registro-link {
+    max-width: 450px;
+    background-color: #f8f9fa;
+    border: 1px dashed #8b0000;
+    padding: 20px;
+}
+#registro-link p {
+    margin-bottom: 0;
+    font-size: 0.95em;
+}
+
+/* ============================================================
+   BLOQUE 3: BOTÓN DE ACCESO
+   Estilos reutilizables mediante clases.
+   ============================================================ */
+.btn-ingresar {
+    background-color: #8b0000;
+}
+.btn-ingresar:hover {
+    background-color: #8b0000;
+}
+@media (max-width: 480px) {
+    #login-form, #registro-link {
+        max-width: 100%;
+    }
+}

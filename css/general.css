@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    BLOQUE 1: CONFIGURACIÓN GENERAL
    Selector universal, body, fuente, fondo, color e interlineado.
    ============================================================ */
@@ -6,7 +6,6 @@
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
-
 body {
     background-color: #f8f9fa;
     margin: 0;
@@ -24,33 +23,27 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 }
-
 h1 {
     margin: 0;
 }
-
 h2 {
     color: #8b0000;
     border-bottom: 2px solid #8b0000;
     padding-bottom: 10px;
 }
-
 h3 {
     color: #8b0000;
 }
-
 p {
     line-height: 1.5;
     margin-bottom: 15px;
     color: #555;
 }
-
 a {
     text-decoration: none;
     font-weight: bold;
     color: #8b0000;
 }
-
 a:hover {
     text-decoration: underline;
     color: #8b0000;
@@ -66,34 +59,30 @@ header {
     text-align: center;
     padding: 20px 0;
 }
-
 main {
     flex: 1;
     width: 100%;
     max-width: 900px;
     margin: 20px auto;
     padding: 0 20px;
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 section {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     width: 100%;
     max-width: 800px;
     text-align: center;
 }
-
 article {
     margin-bottom: 40px;
     width: 100%;
 }
-
 aside {
     background-color: #fff3cd;
     border-left: 5px solid #ffcc00;
@@ -104,7 +93,6 @@ aside {
     max-width: 800px;
     text-align: left;
 }
-
 aside h3, aside p {
     color: #856404;
     margin-bottom: 0;
@@ -119,24 +107,21 @@ nav {
     padding: 15px;
     text-align: center;
 }
-
 nav a {
     color: #ffffff;
     margin: 0 10px;
 }
-
 nav a:hover {
     color: #ffcc00;
     text-decoration: none;
 }
-
 nav i {
     margin-right: 5px;
 }
 
 /* ============================================================
    BLOQUE 5: CONTENIDO Y SECCIONES
-   Estilos para main, section, article y aside.
+   Estilos para details, summary y article div.
    ============================================================ */
 details {
     margin-bottom: 10px;
@@ -146,13 +131,11 @@ details {
     background-color: #f8f9fa;
     text-align: left;
 }
-
 summary {
     font-weight: bold;
     cursor: pointer;
     color: #8b0000;
 }
-
 article div {
     display: flex;
     gap: 20px;
@@ -166,44 +149,48 @@ article div {
    ============================================================ */
 header img {
     margin-top: 15px;
+    max-width: 100%;
+    height: auto;
 }
-
 main section img {
     border-radius: 10px;
     margin-bottom: 10px;
     border: 2px solid #8b0000;
+    max-width: 100%;
+    height: auto;
 }
-
 figure {
     background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
     width: 220px;
+    max-width: 100%;
     text-align: center;
     margin: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: inline-block;
 }
-
 figure img {
     border-radius: 5px;
     border: none;
+    max-width: 100%;
+    height: auto;
 }
-
 figcaption h4 {
     margin: 10px 0 5px;
     color: #333;
 }
-
 figcaption p {
     font-size: 0.9em;
     margin: 0 0 10px;
 }
-
 figcaption strong {
     color: #008000;
     font-size: 1.2em;
+}
+video, audio, iframe {
+    max-width: 100%;
 }
 
 /* ============================================================
@@ -215,7 +202,6 @@ nav ul {
     padding: 0;
     margin: 0;
 }
-
 nav li {
     display: inline-block;
 }
@@ -227,29 +213,24 @@ nav li {
 form {
     text-align: left;
     width: 90%;
-    
 }
-
 fieldset {
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 20px;
     padding: 15px;
 }
-
 legend {
     color: #8b0000;
     font-weight: bold;
     padding: 0 5px;
 }
-
 label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
     color: #333;
 }
-
 input, textarea, select {
     width: 100%;
     padding: 10px;
@@ -259,18 +240,15 @@ input, textarea, select {
     margin-bottom: 15px;
     font-family: inherit;
 }
-
 form span input, form div input {
     width: auto;
     margin-right: 5px;
     margin-bottom: 0;
 }
-
 form span label, form div label {
     display: inline;
     font-weight: normal;
 }
-
 form div {
     display: flex;
     justify-content: space-between;
@@ -278,7 +256,6 @@ form div {
     margin-bottom: 20px;
     font-size: 0.9em;
 }
-
 button {
     background-color: #8b0000;
     color: #ffffff;
@@ -291,18 +268,15 @@ button {
     width: 100%;
     text-align: center;
 }
-
 button:hover {
     background-color: #8b0000;
 }
-
 article button {
     width: auto;
     padding: 8px 15px;
     margin-top: 10px;
     font-size: 1em;
 }
-
 section div a {
     background-color: #28a745;
     color: #ffffff;
@@ -312,18 +286,14 @@ section div a {
     font-weight: bold;
     display: inline-block;
 }
-
 section div a:hover {
     background-color: #218838;
 }
-
 progress {
-    accent-color: red;
+    accent-color: #8b0000;
     width: 100%;
     height: 25px;
 }
-
-
 
 /* ============================================================
    BLOQUE 9: TABLAS
@@ -335,28 +305,23 @@ table {
     margin-bottom: 30px;
     text-align: left;
 }
-
 thead tr {
     background-color: #8b0000;
     color: #ffffff;
 }
-
 thead h3 {
     color: #ffffff;
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
 }
-
 th, td {
     padding: 10px;
     border: 1px solid #ddd;
 }
-
 tbody tr {
     background-color: #ffffff;
 }
-
 tbody tr:hover {
     background-color: #f9f9f9;
 }
@@ -373,9 +338,65 @@ footer {
     width: 100%;
     margin-top: auto;
 }
-
 footer p {
     margin: 0;
     font-size: 0.9em;
     color: #ffffff;
+}
+
+/* ============================================================
+   BLOQUE 11: DISEÑO RESPONSIVO
+   Ajustes para tablets y teléfonos móviles.
+   ============================================================ */
+@media (max-width: 768px) {
+    main {
+        padding: 0 15px;
+        margin: 15px auto;
+    }
+    section, aside {
+        padding: 20px 15px;
+        margin-bottom: 25px;
+    }
+    nav li {
+        display: block;
+        margin-bottom: 8px;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    form {
+        width: 100%;
+    }
+    form div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    figure {
+        width: 100%;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        font-size: 0.9em;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        padding: 15px 10px;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    section, aside {
+        padding: 15px 10px;
+    }
+    button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
 }
