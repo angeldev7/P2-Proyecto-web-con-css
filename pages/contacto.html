@@ -8,15 +8,16 @@
     <link rel="icon" type="image/x-icon" href="../imagenes/logo/iconos/atencion-al-cliente.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/contacto.css">
 </head>
 
 <body>
-    
+
     <header>
         <h1>Contáctanos</h1>
         <img src="../imagenes/logo/iconos/atencion-al-cliente.ico" alt="Icono Atención" width="60">
     </header>
-    
+
     <nav>
         <ul>
             <li>
@@ -38,17 +39,17 @@
     </nav>
 
     <main>
-        
+
         <section id="buzon-sugerencias">
             <h2>Buzón de Sugerencias</h2>
             <p>¿Tienes algún problema con un pedido o nos quieres sugerir un nuevo platillo? ¡Escríbenos!</p>
-            
+
             <form action="principal.html" method="get">
                 <p>
                     <label for="asunto">Asunto:</label>
                     <input type="text" id="asunto" name="asunto" required placeholder="Ej: Sugerencia de menú">
                 </p>
-                
+
                 <p>
                     <label for="telefono">Teléfono (Opcional):</label>
                     <input type="tel" id="telefono" name="telefono" placeholder="0999999999" pattern="[0-9]{10}">
@@ -72,7 +73,8 @@
 
                 <p>
                     <label for="mensaje">Tu mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe aquí los detalles..."></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="5" required
+                        placeholder="Escribe aquí los detalles..."></textarea>
                 </p>
 
                 <button type="submit">Enviar Mensaje</button>
