@@ -39,57 +39,64 @@
     </nav>
 
     <main>
+        <div class="pedido-container">
+            <div class="pedido-col-left">
+                <section id="resumen-compra">
+                    <h2>Resumen de tu compra</h2>
 
-        <section id="resumen-compra">
-            <h2>Resumen de tu compra</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Promoción del Día (Almuerzo + Bebida)</td>
+                                <td>1</td>
+                                <td>$2.75</td>
+                            </tr>
+                            <tr>
+                                <td>Galletas Oreo</td>
+                                <td>1</td>
+                                <td>$0.40</td>
+                            </tr>
+                            <tr class="total-row">
+                                <td colspan="2">Total a Pagar:</td>
+                                <td>$3.15</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-            <table>
-                <tr>
-                    <th>Producto</th>
-                    <th>Cantidad</th>
-                    <th>Precio</th>
-                </tr>
-                <tr>
-                    <td>Promoción del Día (Almuerzo + Bebida)</td>
-                    <td>1</td>
-                    <td>$2.75</td>
-                </tr>
-                <tr>
-                    <td>Galletas Oreo</td>
-                    <td>1</td>
-                    <td>$0.40</td>
-                </tr>
-                <tr>
-                    <td colspan="2">Total a Pagar:</td>
-                    <td>$3.15</td>
-                </tr>
-            </table>
-
-            <div>
-                <a href="principal.html">Confirmar Pago en Efectivo</a>
-            </div>
-        </section>
-
-        <section id="estado-pedido">
-            <h2>Estado de tu pedido actual</h2>
-            <p>Preparando envío... (Tiempo estimado: 15-20 minutos )</p>
-
-            <progress value="65" max="100"></progress>
-            <p>65% completado</p>
-        </section>
-
-        <section id="punto-retiro">
-            <h2>Punto de Retiro</h2>
-            <p>Acércate al punto marcado en la ESPE sede Santo Domingo (Luz de América) para retirar tu pedido cuando la
-                barra llegue al 100%.</p>
-
-            <div>
-                <a href="https://maps.app.goo.gl/63eABtZZDTPDACeK9" target="_blank">Abrir ubicación exacta en Google
-                    Maps</a>
+                    <div class="confirm-btn-container">
+                        <a href="principal.html" class="btn-confirmar">Confirmar Pago en Efectivo</a>
+                    </div>
+                </section>
             </div>
 
-        </section>
+            <div class="pedido-col-right">
+                <section id="estado-pedido">
+                    <h2>Estado de tu pedido actual</h2>
+                    <p>Preparando envío... <br><span class="nota-tiempo">(Tiempo estimado: 15-20 minutos)</span></p>
 
+                    <progress value="65" max="100"></progress>
+                    <p class="progreso-texto">65% completado</p>
+                </section>
+
+                <section id="punto-retiro">
+                    <h2>Punto de Retiro</h2>
+                    <p>Acércate al punto marcado en la ESPE sede Santo Domingo (Luz de América) para retirar tu pedido cuando la
+                        barra llegue al 100%.</p>
+
+                    <div class="map-btn-container">
+                        <a href="https://maps.app.goo.gl/63eABtZZDTPDACeK9" target="_blank" class="btn-mapa">Abrir ubicación exacta en Google
+                            Maps</a>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer>

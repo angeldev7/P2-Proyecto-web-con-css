@@ -1,47 +1,112 @@
-/* ============================================================
-   BLOQUE 1: FORMULARIO DE REGISTRO
-   Estilos propios del formulario de creación de cuenta.
+﻿/* ============================================================
+   BLOQUE 1: FORMULARIO DE REGISTRO (MAQUETACIÓN GRID)
+   Estructuración de campos del formulario.
    ============================================================ */
 #formulario-registro {
-    max-width: 600px;
+    max-width: 700px;
     border-top: 4px solid #8b0000;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
 }
+
 #formulario-registro > p {
     text-align: center;
     margin-bottom: 25px;
+    color: #666666;
 }
+
 .formulario-registro fieldset {
-    background-color: #f8f9fa;
+    background-color: #f4f6f9;
     margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 25px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+}
+
+.formulario-registro fieldset p {
+    margin-bottom: 0; /* Controlado por el gap de la rejilla */
+}
+
+/* Campos de ancho completo en la rejilla */
+.formulario-registro fieldset p.full-width {
+    grid-column: span 2;
+}
+
+/* Campo de checkbox de términos */
+.formulario-registro fieldset p.terms-field {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.formulario-registro fieldset p.terms-field label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formulario-registro fieldset p.terms-field input[type="checkbox"] {
+    width: auto;
+    margin-bottom: 0;
+    cursor: pointer;
 }
 
 /* ============================================================
    BLOQUE 2: BOTÓN DE REGISTRO
-   Estilos reutilizables mediante clases.
    ============================================================ */
 .btn-registrar {
     background-color: #8b0000;
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .btn-registrar:hover {
-    background-color: #8b0000;
+    background-color: #a00000;
+    transform: translateY(-2px);
 }
 
 /* ============================================================
    BLOQUE 3: ENLACE DE INICIO DE SESIÓN
-   Sección secundaria debajo del formulario.
    ============================================================ */
 #login-link {
-    max-width: 600px;
-    background-color: #f8f9fa;
+    max-width: 700px;
+    background-color: #ffffff;
     border: 1px dashed #8b0000;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     padding: 20px;
+    margin-top: -10px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 #login-link p {
     margin-bottom: 0;
     text-align: center;
 }
-@media (max-width: 480px) {
+
+/* ============================================================
+   BLOQUE 4: DISEÑO RESPONSIVO
+   ============================================================ */
+@media (max-width: 600px) {
     #formulario-registro, #login-link {
         max-width: 100%;
+        padding: 20px 15px;
+    }
+    
+    .formulario-registro fieldset {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 12px;
+    }
+    
+    .formulario-registro fieldset p.full-width {
+        grid-column: span 1;
     }
 }

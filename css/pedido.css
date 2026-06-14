@@ -1,63 +1,153 @@
 /* ============================================================
-   BLOQUE 1: RESUMEN DE COMPRA
-   Estilos propios de la tabla del carrito.
+   BLOQUE 1: CONTENEDOR PRINCIPAL (GRID)
+   Distribución en columnas para pantalla dividida en escritorio.
+   ============================================================ */
+.pedido-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 25px;
+    width: 100%;
+}
+
+.pedido-col-left, .pedido-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+/* ============================================================
+   BLOQUE 2: RESUMEN DE COMPRA (TABLA DE DETALLES)
    ============================================================ */
 #resumen-compra {
     text-align: left;
 }
-#resumen-compra table tr:last-child {
-    background-color: #f8f9fa;
-    font-weight: bold;
+
+#resumen-compra table {
+    margin-top: 15px;
 }
-#resumen-compra table tr:last-child td {
+
+#resumen-compra table tr.total-row {
+    background-color: #f4f6f9;
+    font-weight: 700;
+}
+
+#resumen-compra table tr.total-row td {
     color: #8b0000;
     font-size: 1.1em;
     border-top: 2px solid #8b0000;
 }
-#resumen-compra div {
+
+.confirm-btn-container {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 25px;
+}
+
+.btn-confirmar {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+}
+
+.btn-confirmar:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
 }
 
 /* ============================================================
-   BLOQUE 2: ESTADO DEL PEDIDO
-   Estilos para la barra de progreso y mensajes de estado.
+   BLOQUE 3: ESTADO DEL PEDIDO Y PROGRESO
    ============================================================ */
 #estado-pedido {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-}
-#estado-pedido p:first-of-type {
-    font-weight: bold;
-    color: #8b0000;
-}
-#estado-pedido progress {
-    margin: 15px 0;
-}
-#estado-pedido p:last-of-type {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
     text-align: center;
+}
+
+#estado-pedido p {
+    font-size: 1.05em;
+    color: #333333;
+}
+
+#estado-pedido .nota-tiempo {
+    font-size: 0.85em;
+    color: #8b0000;
+    font-weight: 600;
+}
+
+#estado-pedido progress {
+    margin: 20px 0 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#estado-pedido .progreso-texto {
     font-size: 0.9em;
-    color: #555;
+    font-weight: 600;
+    color: #666666;
     margin-bottom: 0;
 }
 
 /* ============================================================
-   BLOQUE 3: PUNTO DE RETIRO
-   Estilos para la sección de ubicación del pedido.
+   BLOQUE 4: PUNTO DE RETIRO Y MAPA
    ============================================================ */
 #punto-retiro {
     border-left: 5px solid #28a745;
     text-align: left;
 }
+
 #punto-retiro h2 {
     color: #28a745;
     border-bottom-color: #28a745;
 }
+
 #punto-retiro p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-size: 0.95em;
 }
+
+.map-btn-container {
+    text-align: center;
+}
+
+.btn-mapa {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+}
+
+.btn-mapa:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
+}
+
+/* ============================================================
+   BLOQUE 5: DISEÑO RESPONSIVO
+   ============================================================ */
+@media (max-width: 768px) {
+    .pedido-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
 @media (max-width: 480px) {
     #resumen-compra table {
         font-size: 0.85em;
+    }
+    .btn-confirmar, .btn-mapa {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
     }
 }

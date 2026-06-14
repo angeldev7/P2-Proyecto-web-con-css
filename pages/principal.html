@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -46,112 +46,116 @@
 
     <main>
 
-        <section id="bienvenida">
-            <h2>¡El mejor lugar para tus antojos!</h2>
-            <p>Explora nuestra variedad de opciones preparadas al instante.</p>
-        </section>
+        <div class="dashboard-header">
+            <section id="bienvenida">
+                <h2>¡El mejor lugar para tus antojos!</h2>
+                <p>Explora nuestra variedad de opciones preparadas al instante.</p>
+            </section>
 
-        <aside>
-            <h3>Promoción del Día</h3>
-            <p class="nota">Lleva tu almuerzo + cualquier bebida seleccionada por solo <strong>$2.75</strong>. ¡Aprovecha antes de
-                que se acabe!</p>
-        </aside>
+            <aside>
+                <h3>Promoción del Día</h3>
+                <p class="nota">Lleva tu almuerzo + cualquier bebida seleccionada por solo <strong>$2.75</strong>. ¡Aprovecha antes de
+                    que se acabe!</p>
+            </aside>
+        </div>
 
         <section id="menu">
             <h2>Nuestro Menú</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            <h3>Almuerzos</h3>
-                        </th>
-                        <th>
-                            <h3>Bebidas</h3>
-                        </th>
-                        <th>
-                            <h3>Snacks</h3>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <article>
-                                <figure class="tarjeta">
-                                    <img src="../imagenes/menu/almuerzos/arroz-con-camaron.jpg" alt="Arroz con camarón"
-                                        width="150">
-                                    <figcaption>
-                                        <h4>Arroz con camarón</h4>
-                                        <p>Con porción especial de ensalada.</p>
-                                        <strong>$2.50</strong><br>
-                                        <button>Añadir al carrito</button>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                        <td>
+            <div class="menu-catalogo">
+                <div class="categoria-columna">
+                    <h3 class="categoria-titulo"><i class="fas fa-bowl-rice"></i> Almuerzos</h3>
+                    <div class="tarjetas-lista">
+                        <article class="tarjeta-item">
                             <figure class="tarjeta">
-                                <img src="../imagenes/menu/bebidas/sprite.webp" alt="Sprite" width="150">
+                                <img src="../imagenes/menu/almuerzos/arroz-con-camaron.jpg" alt="Arroz con camarón">
+                                <figcaption>
+                                    <h4>Arroz con camarón</h4>
+                                    <p>Con porción especial de ensalada.</p>
+                                    <div class="precio-accion">
+                                        <strong>$2.50</strong>
+                                        <button class="btn-agregar">Añadir al carrito</button>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        <article class="tarjeta-item">
+                            <figure class="tarjeta">
+                                <img src="../imagenes/menu/almuerzos/arroz-con-menestra-y-carne.jpg" alt="Arroz con menestra y carne">
+                                <figcaption>
+                                    <h4>Arroz con menestra</h4>
+                                    <p>Con carne asada y ensalada.</p>
+                                    <div class="precio-accion">
+                                        <strong>$2.50</strong>
+                                        <button class="btn-agregar">Añadir al carrito</button>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                <div class="categoria-columna">
+                    <h3 class="categoria-titulo"><i class="fas fa-glass-water"></i> Bebidas</h3>
+                    <div class="tarjetas-lista">
+                        <div class="tarjeta-item">
+                            <figure class="tarjeta">
+                                <img src="../imagenes/menu/bebidas/sprite.webp" alt="Sprite">
                                 <figcaption>
                                     <h4>Sprite</h4>
                                     <p>Botella personal 500ml.</p>
-                                    <strong>$0.50</strong><br>
-                                    <button>Añadir al carrito</button>
+                                    <div class="precio-accion">
+                                        <strong>$0.50</strong>
+                                        <button class="btn-agregar">Añadir al carrito</button>
+                                    </div>
                                 </figcaption>
                             </figure>
-                        </td>
-                        <td>
+                        </div>
+                        <div class="tarjeta-item">
                             <figure class="tarjeta">
-                                <img src="../imagenes/menu/snacks/galletas-chips-ahoy.jpg" alt="Chips Ahoy" width="150">
-                                <figcaption>
-                                    <h4>Chips Ahoy</h4>
-                                    <p>Con chispas de chocolate.</p>
-                                    <strong>$0.40</strong><br>
-                                    <button>Añadir al carrito</button>
-                                </figcaption>
-                            </figure>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <article>
-                                <figure class="tarjeta">
-                                    <img src="../imagenes/menu/almuerzos/arroz-con-menestra-y-carne.jpg"
-                                        alt="Arroz con menestra y carne" width="150">
-                                    <figcaption>
-                                        <h4>Arroz con menestra</h4>
-                                        <p>Con carne asada y ensalada.</p>
-                                        <strong>$2.50</strong><br>
-                                        <button>Añadir al carrito</button>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </td>
-                        <td>
-                            <figure class="tarjeta">
-                                <img src="../imagenes/menu/bebidas/fanta.webp" alt="Fanta" width="150">
+                                <img src="../imagenes/menu/bebidas/fanta.webp" alt="Fanta">
                                 <figcaption>
                                     <h4>Fanta</h4>
                                     <p>Botella personal 500ml.</p>
-                                    <strong>$0.50</strong><br>
-                                    <button>Añadir al carrito</button>
+                                    <div class="precio-accion">
+                                        <strong>$0.50</strong>
+                                        <button class="btn-agregar">Añadir al carrito</button>
+                                    </div>
                                 </figcaption>
                             </figure>
-                        </td>
-                        <td>
+                        </div>
+                    </div>
+                </div>
+                <div class="categoria-columna">
+                    <h3 class="categoria-titulo"><i class="fas fa-cookie"></i> Snacks</h3>
+                    <div class="tarjetas-lista">
+                        <div class="tarjeta-item">
                             <figure class="tarjeta">
-                                <img src="../imagenes/menu/snacks/galletas-oreo.webp" alt="Oreo" width="150">
+                                <img src="../imagenes/menu/snacks/galletas-chips-ahoy.jpg" alt="Chips Ahoy">
+                                <figcaption>
+                                    <h4>Chips Ahoy</h4>
+                                    <p>Con chispas de chocolate.</p>
+                                    <div class="precio-accion">
+                                        <strong>$0.40</strong>
+                                        <button class="btn-agregar">Añadir al carrito</button>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="tarjeta-item">
+                            <figure class="tarjeta">
+                                <img src="../imagenes/menu/snacks/galletas-oreo.webp" alt="Oreo">
                                 <figcaption>
                                     <h4>Galletas Oreo</h4>
                                     <p>Paquete 4 unidades.</p>
-                                    <strong>$0.40</strong><br>
-                                    <button>Añadir al carrito</button>
+                                    <div class="precio-accion">
+                                        <strong>$0.40</strong>
+                                        <button class="btn-agregar">Añadir al carrito</button>
+                                    </div>
                                 </figcaption>
                             </figure>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <hr>
         </section>
 

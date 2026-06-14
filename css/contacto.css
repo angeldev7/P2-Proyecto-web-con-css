@@ -1,58 +1,98 @@
-/* ============================================================
+﻿/* ============================================================
    BLOQUE 1: BUZÓN DE SUGERENCIAS
    Estilos propios de la sección de contacto.
    ============================================================ */
 #buzon-sugerencias {
-    max-width: 600px;
+    max-width: 650px;
     border-top: 4px solid #8b0000;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
     text-align: left;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
+#buzon-sugerencias:hover {
+    box-shadow: 0 8px 25px rgba(139, 0, 0, 0.15);
+}
+
 #buzon-sugerencias > p {
     text-align: center;
     margin-bottom: 25px;
+    color: #666666;
 }
 
 /* ============================================================
    BLOQUE 2: FORMULARIO DE CONTACTO
-   Estilos reutilizables mediante clases.
+   Estilos del formulario y sus campos con Grid.
    ============================================================ */
+.formulario-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
 .formulario-contacto p {
-    margin-bottom: 18px;
+    margin-bottom: 0; /* Controlado por grid gap */
 }
-.formulario-contacto span {
-    display: inline-block;
-    margin-right: 20px;
+
+/* Flexbox para alinear radio buttons de forma limpia */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 8px;
 }
-.formulario-contacto span input {
+
+.radio-group span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radio-group span input[type="radio"] {
     width: auto;
-    margin-bottom: 5px;
-    margin-right: 4px;
+    margin: 0;
+    cursor: pointer;
 }
-.formulario-contacto span label {
+
+.radio-group span label {
     display: inline;
-    font-weight: normal;
+    font-weight: 500;
+    cursor: pointer;
+    color: #333333;
 }
+
 .formulario-contacto textarea {
     min-height: 120px;
+    resize: vertical;
 }
 
 /* ============================================================
    BLOQUE 3: BOTÓN DE ENVÍO
-   Estilos del botón de envío del formulario.
    ============================================================ */
 .btn-enviar {
     background-color: #8b0000;
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .btn-enviar:hover {
-    background-color: #8b0000;
+    background-color: #a00000;
+    transform: translateY(-2px);
 }
-@media (max-width: 480px) {
+
+@media (max-width: 600px) {
     #buzon-sugerencias {
         max-width: 100%;
+        padding: 20px 15px;
     }
-    .formulario-contacto span {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px;
+    
+    .radio-group {
+        flex-direction: column;
+        gap: 12px;
     }
 }

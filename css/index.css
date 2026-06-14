@@ -1,21 +1,54 @@
-/* ============================================================
+﻿/* ============================================================
    BLOQUE 1: FORMULARIO DE INICIO DE SESIÓN
    Estilos propios de la página de login.
    ============================================================ */
 #login-form {
     max-width: 450px;
     border-top: 4px solid #8b0000;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 35px 30px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
+#login-form:hover {
+    box-shadow: 0 8px 25px rgba(139, 0, 0, 0.15);
+}
+
 #login-form img {
-    width: 120px;
+    width: 110px;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    border: none;
 }
+
+#login-form p {
+    font-size: 0.95em;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
 #login-form form {
-    margin-top: 20px;
+    margin-top: 10px;
 }
+
+#login-form form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.88em;
+}
+
 #login-form form div a {
-    font-size: 0.85em;
+    color: #8b0000;
+    font-weight: 500;
+}
+
+#login-form form div a:hover {
+    color: #a00000;
+    text-decoration: underline;
 }
 
 /* ============================================================
@@ -24,27 +57,43 @@
    ============================================================ */
 #registro-link {
     max-width: 450px;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     border: 1px dashed #8b0000;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     padding: 20px;
+    margin-top: -10px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
+#registro-link:hover {
+    border-style: solid;
+}
+
 #registro-link p {
     margin-bottom: 0;
     font-size: 0.95em;
+    color: #333333;
 }
 
 /* ============================================================
    BLOQUE 3: BOTÓN DE ACCESO
-   Estilos reutilizables mediante clases.
+   Estilos del botón de ingreso.
    ============================================================ */
 .btn-ingresar {
     background-color: #8b0000;
+    color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 .btn-ingresar:hover {
-    background-color: #8b0000;
+    background-color: #a00000;
+    transform: translateY(-2px);
 }
+
 @media (max-width: 480px) {
     #login-form, #registro-link {
         max-width: 100%;
+        padding: 25px 20px;
     }
 }
