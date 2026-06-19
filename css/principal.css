@@ -241,3 +241,80 @@ aside h3 {
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================================================
+   BLOQUE 6: ESTILOS PERSONALIZADOS PARA COMPONENTES BOOTSTRAP
+   ============================================================ */
+
+/* Estilos adaptados para el Carrusel de Promociones */
+.promo-carousel-container {
+    height: 100%;
+    min-height: 180px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+.carousel-item .bg-warning {
+    background-color: #fff3cd !important;
+}
+.carousel-item .bg-danger {
+    background-color: #f8d7da !important;
+}
+.carousel-item .bg-success {
+    background-color: #d4edda !important;
+}
+
+.carousel-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+.carousel-item .combo-titulo {
+    color: #856404 !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #2d2d2d !important;
+}
+
+/* Personalización de las tarjetas de Bootstrap en el Menú */
+#menu .card.tarjeta {
+    border: 1px solid #e0e0e0 !important;
+    background-color: #ffffff !important;
+}
+#menu .card-title {
+    color: #333333;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+#menu .card-text {
+    font-size: 0.85em;
+    color: #666666;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+}
+
+/* Personalización del Acordeón de Preguntas Frecuentes */
+.accordion-item {
+    border: 1px solid #e0e0e0 !important;
+    margin-bottom: 10px;
+    border-radius: 6px !important;
+    overflow: hidden;
+}
+.accordion-button {
+    font-size: 0.95em !important;
+    color: #8b0000 !important;
+    background-color: #ffffff !important;
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgba(139, 0, 0, 0.04) !important;
+    color: #8b0000 !important;
+    box-shadow: none !important;
+}
+.accordion-button:focus {
+    box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.15) !important;
+    border-color: rgba(139, 0, 0, 0.15) !important;
+}
+.accordion-body {
+    font-size: 0.9em;
+    color: #666666;
+    background-color: #f4f6f9;
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos>
+    <producto>
+        <id>1</id>
+        <nombre>Arroz con camarón</nombre>
+        <descripcion>Con porción especial de ensalada.</descripcion>
+        <precio>2.50</precio>
+        <categoria>Almuerzos</categoria>
+        <stock>15</stock>
+        <imagen>imagenes/menu/almuerzos/arroz-con-camaron.jpg</imagen>
+    </producto>
+    <producto>
+        <id>2</id>
+        <nombre>Arroz con menestra</nombre>
+        <descripcion>Con carne asada y ensalada.</descripcion>
+        <precio>2.50</precio>
+        <categoria>Almuerzos</categoria>
+        <stock>20</stock>
+        <imagen>imagenes/menu/almuerzos/arroz-con-menestra-y-carne.jpg</imagen>
+    </producto>
+    <producto>
+        <id>3</id>
+        <nombre>Sprite</nombre>
+        <descripcion>Botella personal 500ml.</descripcion>
+        <precio>0.50</precio>
+        <categoria>Bebidas</categoria>
+        <stock>45</stock>
+        <imagen>imagenes/menu/bebidas/sprite.webp</imagen>
+    </producto>
+    <producto>
+        <id>4</id>
+        <nombre>Fanta</nombre>
+        <descripcion>Botella personal 500ml.</descripcion>
+        <precio>0.50</precio>
+        <categoria>Bebidas</categoria>
+        <stock>30</stock>
+        <imagen>imagenes/menu/bebidas/fanta.webp</imagen>
+    </producto>
+    <producto>
+        <id>5</id>
+        <nombre>Chips Ahoy</nombre>
+        <descripcion>Con chispas de chocolate.</descripcion>
+        <precio>0.40</precio>
+        <categoria>Snacks</categoria>
+        <stock>25</stock>
+        <imagen>imagenes/menu/snacks/galletas-chips-ahoy.jpg</imagen>
+    </producto>
+    <producto>
+        <id>6</id>
+        <nombre>Galletas Oreo</nombre>
+        <descripcion>Paquete 4 unidades.</descripcion>
+        <precio>0.40</precio>
+        <categoria>Snacks</categoria>
+        <stock>50</stock>
+        <imagen>imagenes/menu/snacks/galletas-oreo.webp</imagen>
+    </producto>
+</productos>

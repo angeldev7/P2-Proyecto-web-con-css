@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    BLOQUE 1: FORMULARIO DE REGISTRO (MAQUETACIÓN GRID)
    Estructuración de campos del formulario.
    ============================================================ */
@@ -109,4 +109,16 @@
     .formulario-registro fieldset p.full-width {
         grid-column: span 1;
     }
+}
+
+/* ============================================================
+   BLOQUE 5: PERSONALIZACIÓN DE BOOTSTRAP EN REGISTRO
+   ============================================================ */
+.btn-registrar {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    width: 100%;
+    display: block;
+    text-align: center;
 }

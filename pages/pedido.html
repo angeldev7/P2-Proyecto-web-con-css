@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pedido - FastMenu ESPE</title>
     <link rel="icon" type="image/x-icon" href="../imagenes/logo/iconos/carrito-de-compras1.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/pedido.css">
 </head>
@@ -18,26 +18,40 @@
         <img src="../imagenes/logo/iconos/carrito-de-compras1.ico" alt="Icono Carrito" width="60">
     </header>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="principal.html"><i class="fas fa-home"></i> Inicio</a>
-            </li>
-            <li>
-                <a href="pedido.html"><i class="fas fa-shopping-cart"></i> Mi pedido</a>
-            </li>
-            <li>
-                <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
-            </li>
-            <li>
-                <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
-            </li>
-            <li>
-                <a href="../index.html"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid justify-content-center">
+            <span class="navbar-brand d-lg-none text-white fw-bold">FastMenu ESPE</span>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="principal.html"><i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="principal.html#menu"><i class="fas fa-utensils"></i> Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="principal.html#horarios"><i class="fas fa-clock"></i> Horarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pedido.html"><i class="fas fa-shopping-cart"></i> Mi pedido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-
     <main>
         <div class="pedido-container">
             <div class="pedido-col-left">
@@ -71,7 +85,7 @@
                     </table>
 
                     <div class="confirm-btn-container">
-                        <a href="principal.html" class="btn-confirmar">Confirmar Pago en Efectivo</a>
+                        <button type="button" class="btn-confirmar border-0" data-bs-toggle="modal" data-bs-target="#confirmarPagoModal">Confirmar Pago en Efectivo</button>
                     </div>
                 </section>
             </div>
@@ -81,7 +95,9 @@
                     <h2>Estado de tu pedido actual</h2>
                     <p>Preparando envío... <br><span class="nota-tiempo">(Tiempo estimado: 15-20 minutos)</span></p>
 
-                    <progress value="65" max="100"></progress>
+                    <div class="progress my-4">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                    </div>
                     <p class="progreso-texto">65% completado</p>
                 </section>
 
@@ -103,6 +119,27 @@
         <p>Copyright &copy; 2026 FastMenu ESPE. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Modal de Confirmación de Pago -->
+    <div class="modal fade" id="confirmarPagoModal" tabindex="-1" aria-labelledby="confirmarPagoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-start">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="confirmarPagoModalLabel"><i class="fas fa-check-circle me-2"></i>¡Pedido Confirmado!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="fs-6 mb-2">Tu pedido ha sido registrado con éxito en nuestro sistema simulado.</p>
+                    <p class="mb-3 text-dark"><strong>Total a pagar: $3.15</strong></p>
+                    <p class="text-muted small mb-0">Por favor, acércate al punto de retiro en la garita principal en aproximadamente 15-20 minutos para retirar tu comida y realizar el pago en efectivo.</p>
+                </div>
+                <div class="modal-footer border-top-0 pt-0 justify-content-end">
+                    <a href="principal.html" class="btn btn-success btn-sm px-4">Aceptar y Volver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

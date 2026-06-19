@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    BLOQUE 1: BUZÓN DE SUGERENCIAS
    Estilos propios de la sección de contacto.
    ============================================================ */
@@ -95,4 +95,16 @@
         flex-direction: column;
         gap: 12px;
     }
+}
+
+/* ============================================================
+   BLOQUE 4: PERSONALIZACIÓN DE BOOTSTRAP EN CONTACTO
+   ============================================================ */
+.btn-enviar {
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    width: 100%;
+    display: block;
+    text-align: center;
 }

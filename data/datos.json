@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nombre": "Arroz con camarón",
+    "descripcion": "Con porción especial de ensalada.",
+    "precio": 2.50,
+    "categoria": "Almuerzos",
+    "stock": 15,
+    "imagen": "imagenes/menu/almuerzos/arroz-con-camaron.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Arroz con menestra",
+    "descripcion": "Con carne asada y ensalada.",
+    "precio": 2.50,
+    "categoria": "Almuerzos",
+    "stock": 20,
+    "imagen": "imagenes/menu/almuerzos/arroz-con-menestra-y-carne.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Sprite",
+    "descripcion": "Botella personal 500ml.",
+    "precio": 0.50,
+    "categoria": "Bebidas",
+    "stock": 45,
+    "imagen": "imagenes/menu/bebidas/sprite.webp"
+  },
+  {
+    "id": 4,
+    "nombre": "Fanta",
+    "descripcion": "Botella personal 500ml.",
+    "precio": 0.50,
+    "categoria": "Bebidas",
+    "stock": 30,
+    "imagen": "imagenes/menu/bebidas/fanta.webp"
+  },
+  {
+    "id": 5,
+    "nombre": "Chips Ahoy",
+    "descripcion": "Con chispas de chocolate.",
+    "precio": 0.40,
+    "categoria": "Snacks",
+    "stock": 25,
+    "imagen": "imagenes/menu/snacks/galletas-chips-ahoy.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Galletas Oreo",
+    "descripcion": "Paquete 4 unidades.",
+    "precio": 0.40,
+    "categoria": "Snacks",
+    "stock": 50,
+    "imagen": "imagenes/menu/snacks/galletas-oreo.webp"
+  }
+]
